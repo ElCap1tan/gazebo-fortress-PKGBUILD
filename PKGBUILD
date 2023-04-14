@@ -9,7 +9,7 @@ license=('Apache')
 depends=(
     'curl'
     'freeglut'
-    'ffmpeg'
+    'ffmpeg4.4'
     'benchmark'
     'eigen'
     'freeimage'
