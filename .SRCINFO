@@ -27,6 +27,7 @@ pkgbase = gazebo-fortress
 	depends = sqlite
 	depends = tinyxml2
 	depends = urdfdom
+	depends = urdfdom-headers
 	depends = libwebsockets
 	depends = libxi
 	depends = libxml2

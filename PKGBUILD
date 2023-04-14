@@ -23,6 +23,7 @@ depends=(
     'sqlite'
     'tinyxml2'
     'urdfdom'
+    'urdfdom-headers'
     'libwebsockets'
     'libxi'
     'libxml2'
@@ -62,13 +63,13 @@ source=(
 sha256sums=(
     'SKIP'
 )
-# install=ros2-humble.install
 
 prepare() {
-    echo prepare
+    echo $srcdir
+    echo $pkgdir
     # Clone the repos
-    mkdir -p $srcdir/src
-    vcs import $srcdir/src < $srcdir/$pkgname-$pkgver.yaml
+    mkdir -p $srcdir/$pkgname-$pkgver
+    vcs import $srcdir/$pkgname-$pkgver < $srcdir/$pkgname-$pkgver.yaml
 }
 
 build() {
