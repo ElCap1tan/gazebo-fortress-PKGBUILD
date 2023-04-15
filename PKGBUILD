@@ -73,7 +73,8 @@ prepare() {
 }
 
 build() {
-    export PKG_CONFIG_PATH=/usr/lib/ffmpeg4.4/pkgconfig
+    export PKG_CONFIG_PATH=/usr/lib/ffmpeg4.4/pkgconfig:$PKG_CONFIG_PATH
+    echo $PKG_CONFIG_PATH
     colcon build --merge-install
 }
 
